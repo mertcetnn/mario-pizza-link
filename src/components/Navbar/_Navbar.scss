@@ -1,0 +1,80 @@
+@import "../../scss/_mixin.scss";
+@import "../../scss/_variables.scss";
+
+.navbar-container {
+  background-color: black;
+  padding: 20px;
+  @include dcenter;
+  flex-direction: column;
+}
+.nav-logo {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  padding-bottom: 2vh;
+  width: 100%;
+  @include dcenter;
+}
+.nav-list {
+  margin-top: 3vh;
+  ul {
+    display: flex;
+    gap: 3vw;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    @include h1-hover;
+  }
+  i {
+    color: white;
+    margin-bottom: 0.8vh;
+    font-size: 1.4rem;
+  }
+}
+.nav-home {
+  display: flex;
+  @include dcenter;
+  flex-direction: column;
+}
+.nav-menu {
+  display: flex;
+  @include dcenter;
+  flex-direction: column;
+}
+.nav-about {
+  display: flex;
+  @include dcenter;
+  flex-direction: column;
+}
+.nav-contact {
+  display: flex;
+  @include dcenter;
+  flex-direction: column;
+}
+.nav-footer {
+  display: flex;
+  gap: 25vw;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.nav-signs {
+  margin-top: 3vh;
+  gap: 15px;
+  button {
+    @include button;
+    @include dcenter;
+    flex-direction: column;
+    i {
+      font-size: 1.2rem;
+    }
+  }
+  display: flex;
+}
